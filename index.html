@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Projekt 1</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Wstęp</li>
+                    <li><a href="app.html">Aplikacja</a></li>
+                    <li><a href="doc.html">Dokumentacja</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <h1>Opis projektu</h1>
+            <h2>Tematem projektu jest graficzna prezentacja pola elektrycznego generowanego przez ładunki elektryczne. Projekt został zrealizowany jako interaktywna aplikacja, w której użytkownik umieszcza na planszy ładunki i obserwuje zmieniające się potencjał oraz natężenie pola w obszarze wokół ładnuków. Wykorzystano wzory na wartość i kierunek natężenia oraz wartość potencjału pola elektrycznego w punkcie.</h2>
+            <h2>Postawowe funkcjonalności aplikacji:</h2>
+                <ul>
+                    <li>Lista rozwijana 'source' - wybór rodzaju ładunku (dodatni lub ujemny)<br>
+                    <img src="images/source.png" alt="source" width="300" height="50"> <br></li>
+                    <li>Pole do wprowadzenia danych 'absolute electric charge' - określenie bezwględnej wartości ładunku (w jednostach umownych)<br>
+                    <img src="images/charge.png" alt="charge" width="300" height="45"><br></li>
+                    <li>przycisk do wygenerowania ładunku - po wypełnieniu pól 'source' i 'absolute electric charge' oraz naciśnięciu przycisku, użytkownik przesuwa kursor na planszę. Lewy przycisk myszki umożliwia umieszcenie obiektu na planszy<br>
+                    <img src="images/load.png" alt="load"><br></li>
+                    <li>przycisk reset - usuwa ładunki z planszy oraz listy obiektów<br>
+                    <img src="images/reset.png" alt="reset"><br></li>
+                    <li>Lista obiektów umieszonych na planszy 'objects' - zawiera informacje o ID, rodzaju, współrzędnych i wartości ładunku<br>
+                    <img src="images/list.png" alt="list"><br></li>
+                    <li>wskazywanie wybranego elementu - po najechaniu kursorem na element z listy 'objects', odpowiadający mu obiekt na planszy zmienia kolor na bordowy i zwiększa swój rozmiar<br>
+                    <img src="images/mouseover.png" alt="mouseover"><br></li>
+                    <li>usunięcie wybranego obiektu - po najechaniu kursorem na element z listy 'objects', pojawia się przycisk 'x' umożliwiający usunięcie wybranego obiektu z planszy<br>
+                    <img src="images/remove.png" alt="remove"><br></li>
+                    <li>plansza - składa się z regularnej siatki punktów. W każdym punkcie obliczany jest potecjał oraz natężenie pola elektrycznego. Wartość i kierunek wektora natężenia pola elektrycznego odpowiada kolejno długości i kierunkowi wskaźnika. Wartość potencjału utożsamiana jest z kolorem wskaźnika. Potencjał ujemny reprezentowany jest przez odcienie koloru czerwonego, natomiast potencjał dodatni przez odcienie koloru niebieskiego<br>
+                    <img src="images/board.png" alt="board" width = "500" height = "300"><br></li>
+                    <li>współrzędne x i y - współrzędne kursora znajdującego się w obrębie planszy<br>
+                    <img src="images/coordinates.png" alt="coordinates"><br></li>
+                </ul>
+            <footer>
+                Copyright &copy; Wojciech Majkut
+            </footer>
+        </div>
+    </body>
+</html>

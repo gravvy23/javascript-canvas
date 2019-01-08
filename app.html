@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Projekt 1 - Electrify</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Wstęp</a></li>
+                    <li>Aplikacja</li>
+                    <li><a href="doc.html">Dokumentacja</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class = "left">
+            <div class = "left__container" id="container-0">
+                <p>source:<select class = "left__type">
+                    <option style="background-color:gray" value="pos" selected>positive</option>
+                    <option style="background-color:gray" value="neg">negative</option>
+                </select></p>
+                <p>absolute electric charge: <input type="number" class = "left__value" placeholder="0"></p>
+            </div>
+            <div class = "left__container" id="container-1"><div class = "left__container--text">objects</div><div class = "item__list">
+                </div>
+            </div>
+            <div class = "left__container" id="container-2">
+                <button class="left__refresh"><i class="ion-ios-refresh"></i></button>
+                <button class="left__add"><i class="ion-ios-checkmark-outline"></i>
+                </button>
+            </div>
+        </div>
+        <div class = "right">
+            <canvas id="board" width="1150" height="670" style="border:1px solid #666666;"></canvas>
+            <div class = "coordinates"><div class = "coordinates__x"></div><div class = "coordinates__y"></div></div>
+        </div>
+        <script src="src/app.js"></script>
+    </body>
+</html>
